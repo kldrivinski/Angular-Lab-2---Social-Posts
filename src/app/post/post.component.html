@@ -1,0 +1,12 @@
+<section class="post">
+    <h2>{{post.title}}</h2>
+    <p>{{post.thought}}</p>
+    <button name="delete" id="delete" class="fas fa-trash" (click)="deletePost()"></button>
+    <div class="counterArea">
+        <button name="upvote" class="upvote" (click)="countUpvote()">👍</button>
+        <p class="counter">{{counter}}</p>
+    </div>
+
+
+
+</section>

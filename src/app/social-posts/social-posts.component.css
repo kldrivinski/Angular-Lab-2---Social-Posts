@@ -1,0 +1,49 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+button {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+}
+
+.postList{
+    width: 50%;
+    background-color: white;
+    /* padding: 20px; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+
+}
+
+.formPlaceholder{
+
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.507);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

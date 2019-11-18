@@ -1,0 +1,9 @@
+<form class="form" (ngSubmit)="submitPost()">
+    <label name="title">Title</label><input type="text" [(ngModel)]="newPost.title" name="title" placeholder="Title">
+
+    <label name="thought">Thought</label> <input type="textarea" [(ngModel)]="newPost.thought" name="thought"
+        placeholder="Type thoughts here">
+
+    <button type="submit">Add Post</button>
+
+</form>

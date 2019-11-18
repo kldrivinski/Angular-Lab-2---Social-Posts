@@ -1,0 +1,21 @@
+<h1>My thoughts</h1>
+
+<section>
+
+    <button class="Add" type="button" (click)="toggleDiv()">New Thought</button>
+
+    <div class="postList">
+        <app-post *ngFor="let post of posts; index as i" [post]="post" (deleted)="onDelete(i)"></app-post>
+
+    </div>
+
+</section>
+
+
+
+<div class="formPlaceholder" *ngIf="visible">
+    <app-post-form (submitted)="onSubmit($event)"></app-post-form>
+    <!-- // position relative 100, 100
+// form is absolute in the <center></center>
+use ng if -->
+</div>
